@@ -1,0 +1,36 @@
+@import url('../fonts/fonts.css');
+
+.offers-navbar {
+  background-color: #BB9A48;
+  color: #fff;
+  padding: 10px 0;
+  overflow: hidden;
+  font-family: 'Poppins-Regular', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.news-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.news-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.news-item.active {
+  opacity: 1;
+  transform: translateX(0);
+}

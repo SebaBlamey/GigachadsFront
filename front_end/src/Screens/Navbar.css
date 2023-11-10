@@ -1,0 +1,57 @@
+@import url('../fonts/fonts.css');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px 10px;
+  position: relative;
+  font-family: 'Poppins-Light', sans-serif;
+}
+.logo {
+  display: flex; 
+  align-items: center; 
+}
+
+.logo img {
+  width: 100px;
+  height: auto; 
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.menu li:hover::after {
+  width: 100%; 
+}
+.user-cart-icons {
+  display: flex;
+  align-items: center;
+}
+
+.user-icon,
+.cart-icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 25px;
+}
